@@ -1,10 +1,10 @@
 Classicnerd AOSP
 
-$ repo init -u git://github.com/tommytomatoe/manifest.git -b ics
+$ repo init -u git://github.com/classicnerd/manifest.git -b ics
 
 #################### OR ####################
 
-$ repo init -u https://github.com/tommytomatoe/manifest.git -b ics
+$ repo init -u https://github.com/classicnerd/manifest.git -b ics
 
 $ repo sync -j16
 
