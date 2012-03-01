@@ -8,10 +8,6 @@
            fetch="git://github.com/classicnerd/" 
            revision="ics" />
 
-  <remote name="test"
-           fetch="git@github.com:tommytomatoe/Android-Utility.git" 
-           revision="ics" />
-
   <remote name="tt"
            fetch="git://github.com/tommytomatoe/" 
            revision="ics" />
@@ -215,7 +211,6 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="android_packages_apps_Launcher2" remote="github" revision="ics" />
-  <project path="packages/apps/AU" name="Android-Utility" remote="test" revision="ics" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
