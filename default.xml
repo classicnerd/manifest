@@ -266,5 +266,7 @@
   <project path="vendor/hp" name="android_vendor_hp" remote="github" revision="ics" />
   <project path="vendor/htc" name="android_vendor_htc" remote="github" revision="ics" />
   <project path="vendor/cn" name="android_vendor_cn" remote="github" revision="ics" />
+  <project path="vendor/qcom/opensource/omx/mm-core" name="android_vendor_qcom_opensource_omx_mm-core" remote="github" revision="ics" />
+  <project path="vendor/qcom/opensource/omx/mm-video" name="android_vendor_qcom_opensource_omx_mm-video" remote="github" revision="ics" />
 
 </manifest>
