@@ -20,6 +20,10 @@
            remote="aosp"
            sync-j="4" />
 
+  <default revision="kang"
+	   fetch="https://AOKP@github.com/AOKP/"
+	   revision="master" />
+
   <project path="build" name="android_build" remote="github" revision="ics" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project> 
@@ -30,9 +34,13 @@
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="android_dalvik" remote="github" revision="ics" />
   <project path="development" name="android_development" remote="github" revision="ics" />
+  <project path="device/amazon/otter" name="AOKP/device_amazon_otter" remote="gh" revision="ics" />
   <project path="device/common" name="device/common" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
+  <project path="device/htc/common" name="device/htc/common" />
+  <project path="device/htc/shooter" name="device/htc/shooter" />
+  <project path="device/htc/supersonic" name="device/htc/supersonic" />
   <project path="device/moto/common" name="device/moto/common" />
   <project path="device/moto/stingray" name="device/moto/stingray" />
   <project path="device/moto/wingray" name="device/moto/wingray" />
@@ -263,6 +271,7 @@
   <project path="device/hp/tenderloin" name="android_device_hp_tenderloin" remote="github" revision="ics" />
   <project path="device/htc/shooter" name="android_device_htc_shooter" remote="github" revision="ics" />
   <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="cm" revision="ics" />
+  <project path="vendor/amazon/otter" name="AOKP/vendor_amazon_otter" remote="gh" revision="ics" />
   <project path="vendor/hp" name="android_vendor_hp" remote="github" revision="ics" />
   <project path="vendor/htc" name="android_vendor_htc" remote="github" revision="ics" />
   <project path="vendor/cn" name="android_vendor_cn" remote="github" revision="ics" />
