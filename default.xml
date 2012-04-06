@@ -20,10 +20,6 @@
            remote="aosp"
            sync-j="4" />
 
-  <default revision="kang"
-	   fetch="https://AOKP@github.com/AOKP/"
-	   revision="master" />
-
   <project path="build" name="android_build" remote="github" revision="ics" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project> 
@@ -38,9 +34,6 @@
   <project path="device/common" name="device/common" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
-  <project path="device/htc/common" name="device/htc/common" />
-  <project path="device/htc/shooter" name="device/htc/shooter" />
-  <project path="device/htc/supersonic" name="device/htc/supersonic" />
   <project path="device/moto/common" name="device/moto/common" />
   <project path="device/moto/stingray" name="device/moto/stingray" />
   <project path="device/moto/wingray" name="device/moto/wingray" />
