@@ -1,21 +1,103 @@
-Classicnerd AOSP
 
-$ repo init -u git://github.com/classicnerd/manifest.git -b ics
+﻿Quick steps to syncing and building Classicnerd 
 
-#################### OR ####################
 
-$ repo init -u https://github.com/classicnerd/manifest.git -b ics
+1). Install the Build Packages and libs for your linux build environment
+  
+	Install using the package manager of your choice:
 
-$ repo sync -j16
+For 32-bit & 64-bit systems:
 
-Grab a coffee. Grab a lunch. Come back. Enjoy.
+$:	git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.6-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev sun-java6-jdk pngcrush
 
-Full instructions later.
+For 64-bit only systems:
 
-Quick props: cyanogenMod. evervolv. team kang. aosp.
+$:	g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline5-dev gcc-4.3-multilib g++-4.3-multilib
 
-Full props later.
+Note: On Ubuntu 10.10, and variants, you need to enable the parter repository to install sun-java6-jdk: To do this open terminal and add the following
 
-sincerely, 
+$: add-apt-repository "deb http://archive.canonical.com/ lucid partner"
 
-classicnerd
+For 64-bit system (libs needed):
+
+$:	sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev libc6-dev lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev lib32readline5-dev lib32z-dev libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils
+
+
+2). Create your build environment on your linux machine.
+
+	Now it's time to create the directories for your build environment.  Make sure you put in a location that has plenty of space.  Your environment will grow above 20gigs.
+                        
+$: mkdir -p ~/bin 
+
+$: mkdir -p ~/classicnerd_build
+
+
+
+3). Install Repo
+
+Enter the following to download make executable the "repo" binary:  DO NOT SKIP THIS STEP.
+
+$:	curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+
+$:    chmod a+x ~/bin/repo
+
+Next make sure you add 'export PATH=~/bin:$PATH' to your .bashrc then reboot for the changes to take effect.
+
+
+
+
+4). Now enter the following to initialize the repository:
+
+$: cd ~/classicnerd_build
+
+$: repo init -u https://github.com/classicnerd/manifest.git -b ics
+
+$: repo sync -j16 
+
+Then it will start the sync process. (This is gonna take awhile)
+
+
+5). After you have modded the files you see fit, it's time to compile the build.
+
+	Open terminal and move to the root of your build environment (should be classicnerd_build) and enter the following commands.
+
+
+$:	. build/envsetup.sh
+
+$:	lunch
+
+	Your build environment must be configured correctly to build each device.  Since this is the environment ONLY for the HP Touchpad (aka Tenderloin), you will choose #12 after you input the lunch command.
+
+	After you have selected the appropriate device to build, it's important to clean out the build space by entering the following command next.
+
+$:	make clean
+
+
+6).  Choose which type of build you would like to make below and enter the given command.
+
+$:	make 
+
+	( make ) This option will do a straight build only.  Do this if building on single core machine.
+
+
+$:	make -j#
+
+	( make -j# ) Change the # to the amount of jobs you want to run.  Example, if you have a dual core, replace with a 2, if you have a quad replace with a 4. Using a quad-core dual thread would replace with an 8 or higher.  Choose a level or two more won't hurt the build process at all.
+
+$:	make otapackage -j#
+
+        Third option will create an OTA zip file that can be flashed through recovery.  This will be your most likely choice of method.  Replace the # with the number of cores like example above.
+
+$:	make otapackage -j16 WITH_DEXPREOPT=true
+
+	Fourth option will allow you to compile an odexed build.  This has become more of a popular choice especially when building your own.
+
+7).  Sit back and wait.  Depending on your machine, it can take anywhere from a 2+ hour build to around 40 minutes.  If you have a core2duo with only 4gb ram, you could be looking at about a 2 ½ hour build time.  If you have a quad core with 16gb ram, ssd drive you will be around 35-40 minutes.  Of course this is barring any errors that may be produced.
+
+8).  Once you have completed the build, you will find the output in classincerd_build/out/target/tenderloin/(name of zip).
+
+We hope this helps and encourage you to take the plunge and try to build yourself. Start customizing the ROMS and learn the source code.  It's important we keep this open for everyone to enjoy!
+
+================================  CREDITS ========================================
+Android (AOSP), CyanogenMOD and all their awesome developers, Evervolv, AOKP, all those who contribute by means of testing and donations, Github.com, XDA, Rootzwiki
+==================================================================================
