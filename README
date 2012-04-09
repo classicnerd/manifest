@@ -120,7 +120,7 @@ when building your own.
      may be produced.
 
 
-8).  Once you have completed the build, you will find the output in classincerd_build/out/target/tenderloin/(name of zip).
+8).  Once you have completed the build, you will find the output in classincerd_build/out/target/(device)/(name of zip).
      We hope this helps and encourage you to take the plunge and try to build yourself. Start customizing the ROMS and 
      learn the source code.  It's important we keep this open for everyone to enjoy!
 
