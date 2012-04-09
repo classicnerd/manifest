@@ -7,7 +7,8 @@ Install using the package manager of your choice:
 
 For 32-bit & 64-bit systems:
 
-$:	git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.6-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev sun-java6-jdk pngcrush
+$:	git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.6-dev squashfs-tools 
+	build-essential zip curl libncurses5-dev zlib1g-dev sun-java6-jdk pngcrush
 
 
 For 64-bit only systems:
@@ -124,5 +125,6 @@ when building your own.
      learn the source code.  It's important we keep this open for everyone to enjoy!
 
 ================================  CREDITS ========================================
-Android (AOSP), CyanogenMOD and all their awesome developers, Evervolv, AOKP, all those who contribute by means of testing and donations, Github.com, XDA, Rootzwiki
+Android (AOSP), CyanogenMOD and all their awesome developers, Evervolv, AOKP, all 
+those who contribute by means of testing and donations, Github.com, XDA, Rootzwiki
 ==================================================================================
