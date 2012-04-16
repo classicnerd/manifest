@@ -206,6 +206,7 @@
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="packages/apps/ClassicnerdWallpapers" name="android_packages_apps_ClassicnerdWallpapers" remote="github" revision="master" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
+  <project path="packages/apps/CNWidgets" name="android_packages_apps_CNWidgets" remote="github" revision="master" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="packages/apps/Email" name="platform/packages/apps/Email" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
