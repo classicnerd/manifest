@@ -63,6 +63,7 @@
   <project path="external/chromium" name="platform/external/chromium" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="external/clang" name="platform/external/clang" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="external/collada" name="platform/external/collada" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
+  <project path="external/compat-wireless-3.3-rc1-2" name="android_external_compat-wireless-3.3-rc1-2" remote="github" revision="ics" /> 
   <project path="external/dbus" name="platform/external/dbus" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="external/dhcpcd" name="platform/external/dhcpcd" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="external/dnsmasq" name="platform/external/dnsmasq" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
