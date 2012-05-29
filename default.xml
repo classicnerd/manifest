@@ -194,6 +194,7 @@
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="github" revision="master" />
   <project path="hardware/samsung" name="android_hardware_samsung" remote="github" revision="ics" />
+  <project path="kernel/hp/tenderloin" name="android_kernel_hp_tenderloin" remote="github" revision="ics" />
   <project path="libcore" name="platform/libcore" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="manifest" name="manifest" remote="github" revision="ics" />
   <project path="ndk" name="platform/ndk" />
