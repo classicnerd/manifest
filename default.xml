@@ -168,6 +168,7 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="external/yaffs2" name="platform/external/yaffs2" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="external/zlib" name="platform/external/zlib" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
+  <project path="frameworks/av" name="frameworks_av" remote="github" revision="jellybean" />
   <project path="frameworks/base" name="frameworks_base" remote="github" revision="ics" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
@@ -195,6 +196,7 @@
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="github" revision="master" />
   <project path="hardware/samsung" name="android_hardware_samsung" remote="github" revision="ics" />
+  <project path="kernel/grouper" name="android_kernel_grouper" remote="github" revision="jellybean" />
   <project path="kernel/hp/tenderloin" name="android_kernel_hp_tenderloin" remote="github" revision="ics" />
   <project path="libcore" name="platform/libcore" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="manifest" name="manifest" remote="github" revision="ics" />
@@ -268,7 +270,8 @@
   <project path="system/netd" name="platform/system/netd" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="system/vold" name="android_system_vold" remote="github" revision="ics" />
   <project path="system/wlan/ti" name="android_system_wlan_ti" remote="github" revision="ics" />
-  <project path="system/wlan/atheros" name="android_system_wlan_atheros" remote="github" revision="ics" />
+  <project path="system/wlan/atheros" name="android_system_wlan_atheros" remote="github
+  <project path="device/asus/grouper" name="device_asus_grouper" remote="github" revision="jellybean" />" revision="ics" />
   <project path="device/htc/supersonic" name="android_device_htc_supersonic" remote="github" revision="ics" />
   <project path="device/hp/tenderloin" name="android_device_hp_tenderloin" remote="github" revision="ics" />
   <project path="device/htc/shooter" name="android_device_htc_shooter" remote="github" revision="ics" />
@@ -278,6 +281,7 @@
   <project path="device/samsung/crespo4g" name="android_device_samsung_crespo4g" remote="github" revision="ics" />
   <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="cm" revision="ics" />
   <project path="vendor/amazon/otter" name="vendor_amazon_otter" remote="github" revision="ics" />
+  <project path="vendor/asus" name="vendor_asus" remote="github" revision="jellybean" />
   <project path="vendor/hp" name="android_vendor_hp" remote="github" revision="ics" />
   <project path="vendor/htc" name="android_vendor_htc" remote="github" revision="ics" />
   <project path="vendor/cn" name="android_vendor_cn" remote="github" revision="ics" />
