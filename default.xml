@@ -7,6 +7,10 @@
   <remote name="github"
            fetch="git://github.com/classicnerd/" 
            revision="ics" />
+           
+  <remote name="github"
+           fetch="git://github.com/classicnerd/"
+           revision="jellybean" />
 
   <remote name="tt"
            fetch="git://github.com/tommytomatoe/" 
