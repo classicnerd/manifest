@@ -168,14 +168,12 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="external/yaffs2" name="platform/external/yaffs2" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="external/zlib" name="platform/external/zlib" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
-  <project path="frameworks/av" name="frameworks_av" remote="github" revision="jellybean" />
   <project path="frameworks/base" name="frameworks_base" remote="github" revision="ics" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="frameworks/compile/slang" name="frameworks_compile_slang" remote="github" revision="ics" />
   <project path="frameworks/ex" name="platform/frameworks/ex" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="frameworks/media/libvideoeditor" name="platform/frameworks/media/libvideoeditor" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
-  <project path="frameworks/native" name="frameworks_native" remote="github" revision="jellybean" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
